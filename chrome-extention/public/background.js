@@ -5,3 +5,9 @@ chrome.contextMenus.create({
     title: 'Chrome Extention Practice',
     contexts: ['all']    //allows user to right click anywhere to see extension  option
 })
+
+chrome.contextMenus.onClicked.addListener(() => {
+    chrome.tabs.query({active: true, currentWindow: true}, tabs => {
+        chrome.tabs.sendMessage(tabs[0].id, {type: 'getContactInfo'});
+    });
+});
