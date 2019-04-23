@@ -1,0 +1,8 @@
+{
+  "name": "ExtentionPrac",
+  "version": "1.0.0",
+  "description": "practice for chrome extention with AuthO",
+  "main": "index.js",
+  "repository": "https://github.com/cori-peck/Ext-ProofofConcept.git",
+  "license": "MIT"
+}
